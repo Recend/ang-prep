@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-header">Produktai</div>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Pavadinimas</th>
+        <th>Kiekis</th>
+        <th>Kaina</th>
+        <th>Sandelys</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.name}}</td>
+        <td>{{ product.quantity}}</td>
+        <td>{{ product.price}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
